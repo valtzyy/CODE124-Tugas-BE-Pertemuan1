@@ -12,7 +12,7 @@ Buat pengecekan kondisi untuk parameter operator.
 
 # Cara Pengumpulan
 Lakukan Fork pada repository ini.
-1. Clone ke laptopmu dan buat branch baru dengan format: tugas-1-[nama-kamu].
+1. Clone ke laptopmu dan buat branch baru dengan format: nama-NIM-divisi.
 2. Kerjakan kode di dalam branch tersebut dan pastikan sudah diuji coba menggunakan Node.js di terminalmu.
 3. Lakukan Commit dan Push ke repository GitHub milikmu.
 Buat Pull Request (PR) kembali ke repository utama ini agar dapat di-review oleh mentor.

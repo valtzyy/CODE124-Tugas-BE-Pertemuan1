@@ -1,7 +1,32 @@
 
-function hitungKalkulator(angka1, operator, angka2) {
+function hitungKalkulator(angka1, operator, angka2) {  
   let hasil;
-// code here
+
+  // Operasi buat kalkulator
+  switch(operator){
+    case '+': hasil = angka1 + angka2;
+    break;
+
+    case '-': hasil = angka1 - angka2;
+    break;
+
+    case '*': hasil = angka1 * angka2;
+    break;
+
+    case '/': // Error handling kalau angka2 == 0
+              if(angka2 === 0){
+                return 'Error: Tidak bisa membagi dengan angka 0!'
+              }
+
+              hasil = angka1 / angka2;
+    break;
+
+    // Error Handling kalau operator salah
+    default: hasil = 'Operator Salah!!';
+  }
+  
+
+  return `Hasil dari ${angka1} ${operator} ${angka2} adalah ${hasil}`;
 }
 
 console.log("=== Demo Kalkulator Backend ===");

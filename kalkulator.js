@@ -1,7 +1,7 @@
 
 function hitungKalkulator(angka1, operator, angka2) {
   let hasil;
-// code here
+// apa kek kerjaan disini 
 }
 
 console.log("=== Demo Kalkulator Backend ===");

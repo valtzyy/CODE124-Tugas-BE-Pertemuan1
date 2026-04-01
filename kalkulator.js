@@ -29,5 +29,5 @@ console.log(hitungKalkulator(15, "/", 3)); // Output: Hasil dari 15 / 3 adalah 5
 // Menguji error handling (pembagian dengan nol)
 console.log(hitungKalkulator(10, "/", 0)); // Output: Error: Tidak bisa membagi dengan angka 0!
 
-// Menguji error handling (operator tidak valid)
+// Menguji error handling (operator tidak valid!)
 console.log(hitungKalkulator(10, "%", 3)); // Output: Error: Operator tidak valid!

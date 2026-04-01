@@ -1,8 +1,22 @@
 
 function hitungKalkulator(angka1, operator, angka2) {
   let hasil;
-// code here
-}
+  if (operator === '+') {
+        hasil = angka1 + angka2;
+    } else if (operator === '-') {
+        hasil = angka1 - angka2;
+    } else if (operator === '*') {
+        hasil = angka1 * angka2;
+    } else if (operator === '/') {
+        if (angka2 === 0) {
+            return 'Error: Tidak bisa membagi dengan angka nol';
+        }
+        hasil = angka1 / angka2;
+    } else {
+        return 'Error: Operator tidak valid';
+    }
+    return `Hasil dari ${angka1} ${operator} ${angka2} adalah ${hasil}`;
+  }
 
 console.log("=== Demo Kalkulator Backend ===");
 
@@ -14,3 +28,6 @@ console.log(hitungKalkulator(15, "/", 3)); // Output: Hasil dari 15 / 3 adalah 5
 
 // Menguji error handling (pembagian dengan nol)
 console.log(hitungKalkulator(10, "/", 0)); // Output: Error: Tidak bisa membagi dengan angka 0!
+
+// Menguji error handling (operator tidak valid)
+console.log(hitungKalkulator(10, "%", 3)); // Output: Error: Operator tidak valid!

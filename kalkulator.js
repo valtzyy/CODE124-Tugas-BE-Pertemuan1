@@ -1,7 +1,24 @@
 
 function hitungKalkulator(angka1, operator, angka2) {
   let hasil;
-// code here
+  // code here
+  if(operator == "+"){
+    hasil = angka1 + angka2;
+    return hasil;
+  }else if(operator == "-"){
+    hasil = angka1 - angka2;
+    return hasil;
+  }else if(operator == "*"){
+    hasil = angka1 * angka2;
+    return hasil;
+  }else {
+    if(angka2 != 0){
+      hasil = angka1 / angka2;
+      return hasil;
+    }else {
+      console.log("tidak bisa membagi dengan angka 0");
+    }
+  }
 }
 
 console.log("=== Demo Kalkulator Backend ===");
